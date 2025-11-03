@@ -32,7 +32,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #ifndef _ARDUINO_TFT_H
 #define _ARDUINO_TFT_H
 
-#include "Arduino.h"
+//#include "Arduino.h"
 #include "utility/Adafruit_GFX.h"
 #include "utility/Adafruit_ST7735.h"
 
@@ -49,11 +49,5 @@ public:
 
   void begin();  
 };
-
-/// Esplora boards have hard-wired connections with
-/// the Arduino LCD if mounted on the onboard connector.
-#if ARDUINO_AVR_ESPLORA // are we building for Esplora?
-extern TFT EsploraTFT;
-#endif
 
 #endif // _ARDUINO_TFT_H
